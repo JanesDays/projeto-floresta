@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.containerproje{
+    position: relative;
+}
+
+.containerproje .slide-container .slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+}
+
+.containerproje .slide-container .slide .contentprojet{
+    flex: 1 1 350px;
+    animation: slideContent .4s linear .4s backwards;
+}
+
+@keyframes slideContent{0%
+{
+    opacity: 0;
+    transform: translateX(-50px);
+}
+}
+
+.containerproje .slide-container .slide h3{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 25px 5px 25px rgb(130, 32, 241);;
+}
+
+.containerproje .slide-container .slide p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 40%;
+    height: 10%;
+    text-shadow: 25px 5px 25px rgb(166, 255, 1);
+
+}
+
+.containerproje .slide-container{
+    display: none;
+
+}
+
+.containerproje .slide-container.active{
+    display: block;
+}
+
+.containerproje .slide-container:nth-child(1) .slide{
+    background: url(./imagens/fundo-base.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.containerproje .slide-container:nth-child(2) .slide{
+    background: url(./imagens/caipora.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+
+.containerproje .slide-container:nth-child(3) .slide{
+    background: url(./imagens/curupira.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje .slide-container:nth-child(4) .slide{
+    background: url(./imagens/boto.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje .slide-container:nth-child(5) .slide{
+    background: url(./imagens/mapinguari.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100vw;
+    height: 100vh;
+}
+
+.containerproje .slide-container:nth-child(6) .slide{
+    background: url(./imagens/Yara.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje .slide-container:nth-child(7) .slide{
+    background: url(./imagens/matinta\ perera.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje #prev,
+.containerproje #next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background: rgb(94, 94, 99);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+
+}
+
+.containerproje #prev:hover,
+.containerproje #next:hover{
+    background: rgb(39, 39, 41);
+}
+
+.containerproje #prev{
+    left: 20px;
+
+}
+
+.containerproje #next{
+    right: 20px;
+}
+
+ /* @media(max-width: 915px){ */
+    .containerproje #prev{
+        top: 60%;
+        left: 0;
+    }
+    .containerproje #next{
+        top: 60%;
+        right:0;
+    }
+
+    .containerproje .slide-container .slide .containerproje p{
+        font-size: 16px;
+        color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 70%;
+        height: 10%;
+    }
